@@ -15,9 +15,13 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit some common Superior stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from athene device
 $(call inherit-product, device/motorola/athene/device.mk)
@@ -29,7 +33,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
-PRODUCT_NAME := superior_athene
+PRODUCT_NAME := lineage_athene
 PRODUCT_RELEASE_NAME := athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
