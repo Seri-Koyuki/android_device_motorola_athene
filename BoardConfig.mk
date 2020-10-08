@@ -18,6 +18,9 @@ DEVICE_PATH := device/motorola/athene
 
 BOARD_VENDOR := motorola-qcom
 
+#hild
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
 # AIDs and CAPS
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
