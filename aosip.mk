@@ -50,5 +50,5 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/athene/athene:7.0/NPJS25.93-14-13/3:user/release-keys
-VENDOR_BUILD_FINGERPRINT := motorola/athene/athene:7.0/NPJS25.93-14-13/3:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.2105.003/7005429:user/release-keys
+VENDOR_BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.2105.003/7005429:user/release-keys
